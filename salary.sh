@@ -11,7 +11,8 @@ taxval=$(( (salary*10) / 100 ))
 echo "Tax is 10% and Tax amount= $taxval"
 elif [ $salary -le 30000 ]
 then
-echo "Not taxable"
+taxval=$(( (salary*5) / 100 ))
+echo "Tax is 10% and Tax amount= $taxval"
 else
 echo "entry is wrong"
 fi
