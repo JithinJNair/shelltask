@@ -1,7 +1,10 @@
 echo "Enter age:"
 read age
 echo "Entered age is :$age"
-if [ $age -ge 20 ]
+if [ $age -gt 60 ]
+then
+echo "Person is at Oldage"
+elif [ $age -ge 20 -a $age -lt 60 ]
 then
 echo "Person is an adult"
 elif [ $age -lt 20 -a $age -ge 13 ]
